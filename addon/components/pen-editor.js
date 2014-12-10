@@ -11,5 +11,15 @@ export default Ember.Component.extend({
       editor: $this.get(0),
       debug: this.get('debug')
     });
-  }.on('didInsertElement')
+
+    this.set('pen', editor);
+  }.on('didInsertElement'),
+
+  destroyPen: function () {
+    var editor = this.get('pen');
+
+    if (editor) {
+      editor.destroy();
+    }
+  }.on('willDestroyElement')
 });
