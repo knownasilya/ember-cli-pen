@@ -1,3 +1,9 @@
 import PenEditor from 'ember-cli-pen/components/pen-editor';
+import ENV from '../config/environment';
 
-export default PenEditor;
+var config = ENV['ember-cli-pen'];
+
+export default PenEditor.extend({
+  list: config.defaultList,
+  debug: config.debug
+});

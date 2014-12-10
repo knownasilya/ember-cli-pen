@@ -5,6 +5,9 @@ module.exports = {
   name: 'ember-cli-pen',
 
   included: function (app) {
+    var projectConfig = this.project.config(app.env);
+    var config = projectConfig['ember-cli-pen'];
+
     app.import('bower_components/pen/src/font/fontello.eot', {
       destDir: 'assets/font'
     });
@@ -20,6 +23,9 @@ module.exports = {
 
     app.import('bower_components/pen/src/pen.css');
     app.import('bower_components/pen/src/pen.js');
-    app.import('bower_components/pen/src/markdown.js');
+
+    if (config.markdown) {
+      app.import('bower_components/pen/src/markdown.js');
+    }
   }
 };

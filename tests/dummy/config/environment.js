@@ -16,6 +16,17 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    'ember-cli-pen': {
+      defaultList: [
+        'blockquote', 'h2', 'h3', 'p', 'pre',
+        'insertorderedlist', 'insertunorderedlist',
+        'indent', 'outdent',
+        'bold', 'italic', 'underline',
+        'createlink', 'inserthorizontalrule'
+      ],
+      markdown: true
     }
   };
 
