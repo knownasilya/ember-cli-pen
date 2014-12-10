@@ -31,9 +31,13 @@
     "express": "^4.8.5",
     "glob": "^4.0.5"
   },
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Component addon for the Pen markdown editor",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "markdown",
+    "component",
+    "ember",
+    "pen editor"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
