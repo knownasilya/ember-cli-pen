@@ -1,6 +1,6 @@
-# Ember-cli-pen
+# ember-cli-pen
 
-This README outlines the details of collaborating on this Ember addon.
+Use the [Pen] editor with Ember via `{{pen-editor}}`.
 
 ## Installation
 
@@ -23,3 +23,5 @@ This README outlines the details of collaborating on this Ember addon.
 * `ember build`
 
 For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+
+[Pen]: https://github.com/sofish/pen
