@@ -2,7 +2,21 @@
 
 Use the [Pen] editor with Ember via `{{pen-editor}}`.
 
-## Available Options
+## Usage
+
+```sh
+ember install:addon ember-cli-pen
+```
+
+```hbs
+{{pen-editor}}
+```
+
+## Attributes
+
+- `debug` - Defaults to `false`
+
+## Available Config Options
 
 ```js
 var ENV = {
